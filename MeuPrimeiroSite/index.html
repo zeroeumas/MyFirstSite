@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title> MeuPrimeiroSite </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100&display=swap" rel="stylesheet"> 
+    <script src="scripts/main.js" defer></script>  
+
+</head>
+
+<script>
+    window.onload = function() {
+	getDataFromAPI();
+    }
+</script>
+
+<body>
+<div class="background">
+    <div class="recipe" >   
+        <div class="left-side" >
+            <img src="https://img.itdg.com.br/tdg/images/recipes/000/014/903/325113/325113_original.jpg?mode=crop&width=710&height=400" alt="Imagem da receita" id="recipe-img"/>
+        </div>
+
+        <div class="right-side"> 
+            <h3 id="pais" > Brasil </h3>
+            <h1>Mousse de chocolate </h1>
+            <h4></h4>   
+
+            <h2>Ingredients </h2>
+            <ul id ="ingredients"></ul>
+
+            <h2>Method</h2>
+            <p>
+                Em uma panela em banho-maria, aqueça o NESTLÉ Creme de Leite.
+            </p>
+
+            <button id="trocar_receita" > See another recipe </button>
+                
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
